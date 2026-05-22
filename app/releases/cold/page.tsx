@@ -5,7 +5,6 @@ import { FaSpotify, FaApple, FaSoundcloud, FaYoutube, FaAmazon } from 'react-ico
 import { SiTidal } from 'react-icons/si';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navigation from '../../components/Navigation';
 
 export default function ColdRelease() {
   const platforms = [
@@ -19,7 +18,6 @@ export default function ColdRelease() {
 
   return (
     <>
-      <Navigation />
       <div className="min-h-screen bg-gradient-to-b from-black to-zinc-900 text-white pt-16">
         <div className="max-w-2xl mx-auto px-4">
           <motion.div

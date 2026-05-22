@@ -1,14 +1,12 @@
 'use client';
 
 import Image from 'next/image';
-import Navigation from '../components/Navigation';
 import { motion } from 'framer-motion';
 import { FaSpotify, FaApple, FaSoundcloud, FaYoutube, FaInstagram, FaTiktok } from 'react-icons/fa';
 
 export default function AboutPage() {
   return (
     <>
-      <Navigation />
       <div className="pt-24 min-h-screen px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">About Me</h1>

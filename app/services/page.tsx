@@ -3,19 +3,18 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import Link from 'next/link';
-import Navigation from '../components/Navigation';
 
 const mixingOptions = [
   {
     title: 'Mixing (Full Stems)',
     description: 'Professional mixing service for projects with full stem separation. Perfect for complex productions requiring detailed control over each element.',
-    price: 'Starting at $200',
+    price: 'Starting at $100',
     bookingUrl: '/booking?service=mixing-stems'
   },
   {
     title: 'Mixing (2-Track)',
     description: 'Mixing service for pre-mixed tracks or simple productions. Ideal for basic mixing needs or final adjustments to a stereo file.',
-    price: 'Starting at $100',
+    price: 'Starting at $50',
     bookingUrl: '/booking?service=mixing-2track'
   }
 ];
@@ -24,23 +23,23 @@ const services = [
   {
     title: 'Music Production',
     description: 'Professional music production services for artists and bands. The help to bring your vision to life. ',
-    price: 'Starting at $200',
+    price: 'Starting at $100',
   },
   {
     title: 'Mixing',
     description: 'Get your tracks sounding leveled and meshed with our mixing services.',
-    price: 'Starting at $100',
+    price: 'Starting at $50',
     hasMixingOptions: true
   },
   {
     title: 'Recording Sessions',
   description: '<strong>MUST KNOW ME PERSONALLY</strong> High-quality recording sessions in my professional studio with state-of-the-art equipment.',
-    price: '$100/hour',
+    price: '$35/hour',
   },
   {
     title: 'Mastering',
     description: 'Final polishing step where audio is balanced, optimized, and prepared for distribution.',
-    price: 'Starting at $50',
+    price: 'Starting at $25',
   },
 ];
 
@@ -48,7 +47,6 @@ export default function ServicesPage() {
   const [showMixingModal, setShowMixingModal] = useState(false);
   return (
     <>
-      <Navigation />
       <div className="pt-20 min-h-screen px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Our Services</h1>

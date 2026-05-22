@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Archivo_Black } from "next/font/google";
 import "./globals.css";
+import Navigation from "./components/Navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +11,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const archivoblack = Archivo_Black({
+  variable: "--font-archivo-black",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -40,7 +47,10 @@ export default function RootLayout({
         <link rel="alternate icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${archivoblack.variable} antialiased bg-black text-white`}
+      >
+        <Navigation />
         {children}
       </body>
     </html>

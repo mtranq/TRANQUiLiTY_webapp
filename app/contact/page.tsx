@@ -1,5 +1,3 @@
-import Navigation from '../components/Navigation';
-
 export const metadata = {
   title: 'Contact',
   description: 'Reach TRANQUiLiTY for bookings, production or collaboration.'
@@ -8,7 +6,6 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <Navigation />
       <div className="pt-24 min-h-screen px-4">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Contact</h1>

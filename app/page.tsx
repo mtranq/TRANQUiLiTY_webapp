@@ -3,12 +3,10 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import Navigation from './components/Navigation';
 
 export default function Home() {
   return (
     <>
-      <Navigation />
       <div className="relative min-h-screen">
         {/* Hero Section */}
         <section className="relative h-screen flex items-center justify-center">

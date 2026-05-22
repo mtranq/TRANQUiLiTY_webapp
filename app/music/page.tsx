@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Navigation from '../components/Navigation';
 
 type Track = {
   title: string;
@@ -282,7 +281,6 @@ export default function MusicPage() {
 
   return (
     <>
-      <Navigation />
       <div className="pt-20 min-h-screen px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">My Music</h1>
