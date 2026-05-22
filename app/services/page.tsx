@@ -8,7 +8,7 @@ const mixingOptions = [
   {
     title: 'Mixing (Full Stems)',
     description: 'Professional mixing service for projects with full stem separation. Perfect for complex productions requiring detailed control over each element.',
-    price: 'Starting at $100',
+    price: 'Starting at $75',
     bookingUrl: '/booking?service=mixing-stems'
   },
   {
@@ -23,7 +23,7 @@ const services = [
   {
     title: 'Music Production',
     description: 'Professional music production services for artists and bands. The help to bring your vision to life. ',
-    price: 'Starting at $100',
+    price: 'Starting at $75',
   },
   {
     title: 'Mixing',
