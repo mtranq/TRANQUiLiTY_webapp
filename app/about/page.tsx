@@ -31,7 +31,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-4 left-4">
                 <p className="text-sm uppercase tracking-wider text-gray-300">TRANQUiLiTY</p>
-                <p className="text-lg font-semibold">Artist / Producer / Engineer</p>
+                <p className="text-lg font-semibold">Producer / Songwriter / Engineer</p>
               </div>
             </motion.div>
 
